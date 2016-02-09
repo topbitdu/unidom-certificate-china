@@ -17,6 +17,5 @@ rake db:migrate
 
 ## Call the Model:
 ```ruby
-Unidom::Certificate::China.IdentityCard.valid_at.alive.first
-Unidom::Certificate::China.BusinessLicense.valid_at.alive.first
+Unidom::Certificate::China::IdentityCard.identification_number_is('51010519801231123X').first
 ```
