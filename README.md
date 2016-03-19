@@ -18,5 +18,14 @@ rake db:migrate
 
 ## Call the Model
 ```ruby
-Unidom::Certificate::China::IdentityCard.identification_number_is('51010519801231123X').first
+identity_card = Unidom::Certificate::China::IdentityCard.identification_number_is('51010519801231123X').first_or_create(
+  name:                   'John',
+  address:                '#1 Nanjing Street, Shanghai, China',
+  issuing_authority_name: 'Shanghai Police Station',
+  ethnicity_code:         'HA',
+  validity_from_date:     '2015-01-01',
+  validity_thru_date:     '2025-01-01'
+)
+identity_card.gender_code # '1' male, calculated from the identification_number
+identity_card.birth_date  # '1980-12-31', calculated from the identification_number
 ```
