@@ -12,3 +12,4 @@
 
 ## v0.4
 1. Business License model & migration
+2. Improved the Ruby Gem Specification to depend on unidom-common v0.7
