@@ -11,5 +11,8 @@
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
 
 ## v0.4
-1. Business License model & migration
+1. Improved the Identity Card migration
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.7
+
+## v0.5
+1. Business License model & migration

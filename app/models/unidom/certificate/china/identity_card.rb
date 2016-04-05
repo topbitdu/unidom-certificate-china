@@ -18,8 +18,9 @@ class Unidom::Certificate::China::IdentityCard < ActiveRecord::Base
   include Unidom::Common::Concerns::ModelExtension
 
   before_validation do
-    self.birth_date  = Date.parse "#{identification_number[6..9]}-#{identification_number[10..11]}-#{identification_number[12..13]}"
-    self.gender_code = identification_number[16].to_i.odd? ? '1' : '2'
+    self.identification_number = self.identification_number.upcase
+    self.birth_date            = Date.parse "#{identification_number[6..9]}-#{identification_number[10..11]}-#{identification_number[12..13]}"
+    self.gender_code           = identification_number[16].to_i.odd? ? '1' : '2'
   end
 
 end

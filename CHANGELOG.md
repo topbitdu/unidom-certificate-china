@@ -9,3 +9,7 @@
 ## v0.3
 1. Improved the Identity Card model to extract the format validation regular expression
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
+
+## v0.4
+1. Improved the Identity Card migration
+2. Improved the Ruby Gem Specification to depend on unidom-common v0.7
