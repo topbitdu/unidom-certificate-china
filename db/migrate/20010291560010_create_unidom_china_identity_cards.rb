@@ -31,7 +31,7 @@ class CreateUnidomChinaIdentityCards < ActiveRecord::Migration
 
     end
 
-    add_index :unidom_china_identity_cards, [ :identification_number, :validity_from_date ], unique: true
+    add_index :unidom_china_identity_cards, [ :identification_number, :validity_from_date ], unique: true, name: 'index_unidom_china_identity_cards_on_identification_number'
     # add_index :unidom_china_identity_cards, :encrypted_identification_number
     # add_index :unidom_china_identity_cards, :slug, unique: true
 
