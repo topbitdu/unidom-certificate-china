@@ -33,4 +33,13 @@ identity_card = Unidom::Certificate::China::IdentityCard.identification_number_i
 )
 identity_card.gender_code # '1' male, calculated from the identification_number
 identity_card.birth_date  # '1980-12-31', calculated from the identification_number
+
+Unidom::Certificate::China::BusinessLicense.registration_number_is('510105012345670').first_or_create(
+  name:                      'Google',
+  address:                   '#1 Nanjing Street, Shanghai, China',
+  issuing_authority_name:    'Shanghai Industry & Commerce Administration',
+  legal_representative_name: 'Lawrence Edward Page',
+  validity_from_date:        '2015-01-01',
+  validity_thru_date:        '2025-01-01'
+)
 ```

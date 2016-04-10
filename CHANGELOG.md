@@ -14,3 +14,7 @@
 1. Improved the Identity Card migration
 2. Improved the validation for the #issuing_authority_name attribute of the Identity Card model to allow blank
 3. Improved the Ruby Gem Specification to depend on unidom-common v0.7
+
+## v0.5
+1. Business License model & migration
+2. Improved the Ruby Gem Specification to depend on unidom-common v0.8
