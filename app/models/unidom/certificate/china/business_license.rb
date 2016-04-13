@@ -16,6 +16,8 @@ class Unidom::Certificate::China::BusinessLicense < ActiveRecord::Base
   validates :legal_representative_name, presence:    true, length: { in: 2..columns_hash['legal_representative_name'].limit }
   validates :issuing_authority_name,    allow_blank: true, length: { in: 2..columns_hash['issuing_authority_name'].limit    }
 
+  has_many :certificatings, class_name: 'Unidom::Certificate::Certificating', as: :certification
+
   scope :registration_number_is, ->(registration_number) { where registration_number: registration_number }
 
 end

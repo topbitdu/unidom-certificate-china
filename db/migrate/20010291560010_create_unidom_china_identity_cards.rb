@@ -16,8 +16,8 @@ class CreateUnidomChinaIdentityCards < ActiveRecord::Migration
       # t.column :encryption_pepper,               'char(21)', null: false, default: nil
 
       t.string :issuing_authority_name, null: false, default: '', limit: 200
-      t.date   :validity_from_date,     null: false, default: '2005-01-01'
-      t.date   :validity_thru_date,     null: false, default: '2025-01-01'
+      t.date   :validity_from_date,     null: false, default: '1970-01-01'
+      t.date   :validity_thru_date,     null: false, default: '3000-01-01'
 
       # t.string :slug, null: false, default: nil, limit: 200
 

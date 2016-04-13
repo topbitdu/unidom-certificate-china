@@ -18,3 +18,6 @@
 ## v0.5
 1. Business License model & migration
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.8
+
+## v0.6
+1. Improved the Business License model to add the #certificating association
