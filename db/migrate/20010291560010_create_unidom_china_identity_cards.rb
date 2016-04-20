@@ -4,7 +4,7 @@ class CreateUnidomChinaIdentityCards < ActiveRecord::Migration
 
     create_table :unidom_china_identity_cards, id: :uuid do |t|
 
-      t.string :name,       null: false, default: '', limit: 16
+      t.string :name,       null: false, default: '', limit: 200
       t.date   :birth_date, null: false, default: nil
       t.string :address,    null: false, default: '', limit: 200
 

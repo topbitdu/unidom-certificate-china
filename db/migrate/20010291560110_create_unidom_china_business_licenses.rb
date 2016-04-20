@@ -6,7 +6,7 @@ class CreateUnidomChinaBusinessLicenses < ActiveRecord::Migration
 
       t.column :registration_number, 'char(15)', null: false, default: nil
 
-      t.string :name,    null: false, default: '', limit: 16
+      t.string :name,    null: false, default: '', limit: 200
       t.string :address, null: false, default: '', limit: 200
 
       t.string :legal_representative_name, null: false, default: '', limit: 200
