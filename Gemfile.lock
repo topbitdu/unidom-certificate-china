@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unidom-certificate-china (0.4)
+    unidom-certificate-china (0.7)
       unidom-common (~> 0.8)
 
 GEM
