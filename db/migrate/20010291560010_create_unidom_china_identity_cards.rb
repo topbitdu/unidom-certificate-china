@@ -19,8 +19,6 @@ class CreateUnidomChinaIdentityCards < ActiveRecord::Migration
       t.date   :validity_from_date,     null: false, default: '1970-01-01'
       t.date   :validity_thru_date,     null: false, default: '3000-01-01'
 
-      # t.string :slug, null: false, default: nil, limit: 200
-
       t.column   :state, 'char(1)', null: false, default: 'C'
       t.datetime :opened_at,        null: false, default: ::Time.utc(1970)
       t.datetime :closed_at,        null: false, default: ::Time.utc(3000)
@@ -33,7 +31,6 @@ class CreateUnidomChinaIdentityCards < ActiveRecord::Migration
 
     add_index :unidom_china_identity_cards, [ :identification_number, :validity_from_date ], unique: true, name: 'index_unidom_china_identity_cards_on_identification_number'
     # add_index :unidom_china_identity_cards, :encrypted_identification_number
-    # add_index :unidom_china_identity_cards, :slug, unique: true
 
   end
 
