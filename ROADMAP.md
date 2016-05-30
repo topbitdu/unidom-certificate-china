@@ -26,5 +26,6 @@
 1. Improve the Identity Card model to expand the length of the name from 16 to 200
 2. Improve the Business License model to expand the length of the name from 16 to 200
 
-## v0.8
-1. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+## v1.0
+1. Identification Number Validator
+2. Improve the Ruby Gem Specification to depend on unidom-common v0.9
