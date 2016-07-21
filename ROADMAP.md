@@ -27,5 +27,16 @@
 2. Improve the Business License model to expand the length of the name from 16 to 200
 
 ## v1.0
+1. Improve the Business License model to include the As Certification concern
+2. Improve the Identity Card model to include the As Certification concern
+3. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+4. Improve the Ruby Gem Specification to depend on unidom-certificate v1.0
+
+## v1.1
 1. Identification Number Validator
-2. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+2. As Business License Certificated concern
+3. As Identity Card Certificated concern
+
+## v1.2
+1. Improve the As Business License Certificated concern to add the #is_china_business_license_certificated! method
+2. Improve the As Identity Card Certificated concern to add the #is_china_identity_card_certificated! method
