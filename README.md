@@ -43,3 +43,19 @@ Unidom::Certificate::China::BusinessLicense.registration_number_is('510105012345
   validity_thru_date:        '2025-01-01'
 )
 ```
+
+## Include the Concerns
+```ruby
+include Unidom::Certificate::China::Concerns::AsBusinessLicenseCertificated
+include Unidom::Certificate::China::Concerns::AsIdentityCardCertificated
+```
+
+### As Business License Certificated
+The As Business License Certificated do the following tasks for the includer automatically:
+1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern
+2. Define the has_many :china_business_licenses macro as: ``has_many :china_business_licenses, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::BusinessLicense'``
+
+### As Identity Card Certificated
+The As Identity Card Certificated do the following tasks for the includer automatically:
+1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern
+2. Define the has_many :china_identity_cards macro as: ``has_many :china_identity_cards, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::IdentityCard'``

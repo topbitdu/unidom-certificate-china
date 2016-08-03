@@ -27,7 +27,11 @@
 2. Improved the Business License model to expand the length of the name from 16 to 200
 
 ## v1.0
-1. Improve the Business License model to include the As Certification concern
-2. Improve the Identity Card model to include the As Certification concern
-3. Improve the Ruby Gem Specification to depend on unidom-common v0.9
-4. Improve the Ruby Gem Specification to depend on unidom-certificate v1.0
+1. Improved the Business License model to include the As Certification concern
+2. Improved the Identity Card model to include the As Certification concern
+3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+4. Improved the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v1.0
+
+## v1.1
+1. As Business License Certificated concern
+2. As Identity Card Certificated concern

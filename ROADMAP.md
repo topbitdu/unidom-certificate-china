@@ -8,16 +8,16 @@
 
 ## v0.3
 1. Improve the Identity Card model to extract the format validation regular expression
-2. Improve the Ruby Gem Specification to depend on unidom-common v0.5
+2. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 
 ## v0.4
 1. Improve the Identity Card migration
 2. Improve the validation for the #issuing_authority_name attribute of the Identity Card model to allow blank
-3. Improve the Ruby Gem Specification to depend on unidom-common v0.7
+3. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.7
 
 ## v0.5
 1. Business License model & migration
-2. Improve the Ruby Gem Specification to depend on unidom-common v0.8
+2. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.8
 
 ## v0.6
 1. Improve the Business License model to add the #certificating association
@@ -29,14 +29,16 @@
 ## v1.0
 1. Improve the Business License model to include the As Certification concern
 2. Improve the Identity Card model to include the As Certification concern
-3. Improve the Ruby Gem Specification to depend on unidom-common v0.9
-4. Improve the Ruby Gem Specification to depend on unidom-certificate v1.0
+3. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+4. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v1.0
 
 ## v1.1
-1. Identification Number Validator
-2. As Business License Certificated concern
-3. As Identity Card Certificated concern
+1. As Business License Certificated concern
+2. As Identity Card Certificated concern
 
 ## v1.2
 1. Improve the As Business License Certificated concern to add the #is_china_business_license_certificated! method
 2. Improve the As Identity Card Certificated concern to add the #is_china_identity_card_certificated! method
+
+## v1.3
+1. Identification Number Validator
