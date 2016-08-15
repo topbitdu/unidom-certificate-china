@@ -8,16 +8,16 @@
 
 ## v0.3
 1. Improved the Identity Card model to extract the format validation regular expression
-2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
+2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 
 ## v0.4
 1. Improved the Identity Card migration
 2. Improved the validation for the #issuing_authority_name attribute of the Identity Card model to allow blank
-3. Improved the Ruby Gem Specification to depend on unidom-common v0.7
+3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.7
 
 ## v0.5
 1. Business License model & migration
-2. Improved the Ruby Gem Specification to depend on unidom-common v0.8
+2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.8
 
 ## v0.6
 1. Improved the Business License model to add the #certificating association
@@ -35,3 +35,6 @@
 ## v1.1
 1. As Business License Certificated concern
 2. As Identity Card Certificated concern
+
+## v1.1.1
+1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
