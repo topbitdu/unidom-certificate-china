@@ -9,7 +9,7 @@ class Unidom::Certificate::China::IdentityCard < ActiveRecord::Base
   include Unidom::Common::Concerns::ModelExtension
   include Unidom::Certificate::Concerns::AsCertification
 
-  validates :identification_number,  presence: true, length: { is: self.columns_hash['identification_number'].limit }, format: FORMAT_VALIDATION_REGEX
+  validates :identification_number, presence: true, length: { is: self.columns_hash['identification_number'].limit }, format: FORMAT_VALIDATION_REGEX
 
   validates :name,    presence: true, length: { in: 2..self.columns_hash['name'].limit    }
   validates :address, presence: true, length: { in: 2..self.columns_hash['address'].limit }
