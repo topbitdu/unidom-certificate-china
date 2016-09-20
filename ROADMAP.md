@@ -40,8 +40,4 @@
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
 
 ## v1.2
-1. Improve the As Business License Certificated concern to add the #is_china_business_license_certificated! method
-2. Improve the As Identity Card Certificated concern to add the #is_china_identity_card_certificated! method
-
-## v1.3
-1. Identification Number Validator
+1. Identification Number validator
