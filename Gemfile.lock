@@ -108,7 +108,7 @@ GEM
       thread_safe (~> 0.1)
     unidom-certificate (2.0)
       unidom-common (>= 1.0)
-    unidom-common (1.2)
+    unidom-common (1.5)
       pg (~> 0)
       rails (>= 4.2)
     websocket-driver (0.6.4)
