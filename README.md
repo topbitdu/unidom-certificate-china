@@ -7,22 +7,34 @@
 Unidom (UNIfied Domain Object Model) is a series of domain model engines. The China Certificate domain model engine includes Identity Card, Driving License, and Business License models.
 Unidom (统一领域对象模型)是一系列的领域模型引擎。中国证件领域模型引擎包括中国大陆的身份证、驾驶证、营业执照等模型。
 
+
+
 ## Recent Update
+
 Check out the [Road Map](ROADMAP.md) to find out what's the next.
 Check out the [Change Log](CHANGELOG.md) to find out what's new.
 
+
+
 ## Usage in Gemfile
+
 ```ruby
 gem 'unidom-certificate-china'
 ```
 
+
+
 ## Run the Database Migration
+
 ```shell
 rake db:migrate
 ```
 The migration versions start with 2001029156.
 
+
+
 ## Call the Model
+
 ```ruby
 identity_card = Unidom::Certificate::China::IdentityCard.identification_number_is('51010519801231123X').first_or_create(
   name:                   'John',
@@ -45,18 +57,23 @@ Unidom::Certificate::China::BusinessLicense.registration_number_is('510105012345
 )
 ```
 
+
+
 ## Include the Concerns
+
 ```ruby
 include Unidom::Certificate::China::Concerns::AsBusinessLicenseCertificated
 include Unidom::Certificate::China::Concerns::AsIdentityCardCertificated
 ```
 
 ### As Business License Certificated
+
 The As Business License Certificated do the following tasks for the includer automatically:
 1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern  
 2. Define the has_many :china_business_licenses macro as: ``has_many :china_business_licenses, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::BusinessLicense'``
 
 ### As Identity Card Certificated
+
 The As Identity Card Certificated do the following tasks for the includer automatically:
 1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern  
 2. Define the has_many :china_identity_cards macro as: ``has_many :china_identity_cards, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::IdentityCard'``
