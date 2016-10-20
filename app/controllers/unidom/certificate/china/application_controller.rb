@@ -1,4 +1,6 @@
 module China
   class ApplicationController < ActionController::Base
-  end
+  protect_from_forgery with: :exception
+end
+
 end
