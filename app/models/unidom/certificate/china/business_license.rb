@@ -1,6 +1,6 @@
 # Business License 是中国的工商营业执照。
 
-class Unidom::Certificate::China::BusinessLicense < ActiveRecord::Base
+class Unidom::Certificate::China::BusinessLicense < Unidom::Certificate::China::ApplicationRecord
 
   FORMAT_VALIDATION_REGEX = /\A\d{15}\z/
 
