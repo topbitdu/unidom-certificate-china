@@ -18,10 +18,12 @@ class Unidom::Certificate::China::IdentityCard < ActiveRecord::Base
 
   scope :identification_number_is, ->(identification_number) { where identification_number: identification_number }
 
-  before_validation do
-    self.identification_number = self.identification_number.upcase
-    self.birth_date            = Date.parse "#{identification_number[6..9]}-#{identification_number[10..11]}-#{identification_number[12..13]}"
-    self.gender_code           = identification_number[16].to_i.odd? ? '1' : '2'
+  after_validation do
+    if errors.blank?
+      self.identification_number = self.identification_number.upcase
+      self.birth_date            = Date.parse "#{identification_number[6..9]}-#{identification_number[10..11]}-#{identification_number[12..13]}"
+      self.gender_code           = identification_number[16].to_i.odd? ? '1' : '2'
+    end
   end
 
 end
