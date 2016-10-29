@@ -1,6 +1,6 @@
 # Identity Card 是中国身份证。
 
-class Unidom::Certificate::China::IdentityCard < ActiveRecord::Base
+class Unidom::Certificate::China::IdentityCard < Unidom::Certificate::China::ApplicationRecord
 
   FORMAT_VALIDATION_REGEX = /\A\d{17}[\dx]\z/i
 
