@@ -77,3 +77,11 @@ The As Business License Certificated do the following tasks for the includer aut
 The As Identity Card Certificated do the following tasks for the includer automatically:
 1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern  
 2. Define the has_many :china_identity_cards macro as: ``has_many :china_identity_cards, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::IdentityCard'``
+
+
+
+## Validator
+
+```ruby
+validates :identification_number, presence: true, identification_number: true
+```
