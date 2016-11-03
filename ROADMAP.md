@@ -41,3 +41,6 @@
 
 ## v1.2
 1. Identification Number validator
+
+## v1.2.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.6
