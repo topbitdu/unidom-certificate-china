@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    unidom-certificate-china (1.2)
+    unidom-certificate-china (1.2.1)
       unidom-certificate (>= 1.0)
-      unidom-common (>= 1.0)
+      unidom-common (>= 1.6)
 
 GEM
   remote: https://rubygems.org/
