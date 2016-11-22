@@ -16,7 +16,7 @@
 3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.7
 
 ## v0.5
-1. Business License model & migration
+1. Business License model & migration (20010291560110)
 2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.8
 
 ## v0.6
