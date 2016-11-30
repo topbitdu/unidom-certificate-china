@@ -82,6 +82,8 @@ The As Identity Card Certificated do the following tasks for the includer automa
 
 ## Validator
 
+### Identification Number validator
+
 ```ruby
-validates :identification_number, presence: true, identification_number: true
+validates :identification_number, presence: true, 'unidom/certificate/china/identification_number': true
 ```
