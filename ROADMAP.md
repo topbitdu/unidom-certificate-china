@@ -20,7 +20,7 @@
 2. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.8
 
 ## v0.6
-1. Improve the Business License model to add the #certificating association
+1. Improve the Business License model to add the ``has_many :certificatings`` macro
 
 ## v0.7
 1. Improve the Identity Card model to expand the length of the name from 16 to 200
