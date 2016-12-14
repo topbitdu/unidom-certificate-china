@@ -12,7 +12,7 @@
 
 ## v0.4
 1. Improve the Identity Card migration
-2. Improve the validation for the #``issuing_authority_name`` attribute of the Identity Card model to allow blank
+2. Improve the Identity Card model for the validation of the #``issuing_authority_name`` attribute to allow blank
 3. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.7
 
 ## v0.5
