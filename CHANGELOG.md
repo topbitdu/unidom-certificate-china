@@ -51,3 +51,7 @@
 
 ## v1.2.3
 1. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.3
+
+## v1.2.4
+1. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.4
+2. Improve the Engine class to include the Engine Extension
