@@ -1,6 +1,8 @@
 # Unidom Certificate China 中国证件领域模型引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/unidom-certificate-china/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/unidom-certificate-china.svg)](https://badge.fury.io/rb/unidom-certificate-china)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/unidom-certificate-china.svg)](https://gemnasium.com/github.com/topbitdu/unidom-certificate-china)
 
@@ -69,13 +71,13 @@ include Unidom::Certificate::China::Concerns::AsIdentityCardCertificated
 ### As Business License Certificated
 
 The As Business License Certificated do the following tasks for the includer automatically:
-1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern  
+1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern
 2. Define the has_many :china_business_licenses macro as: ``has_many :china_business_licenses, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::BusinessLicense'``
 
 ### As Identity Card Certificated
 
 The As Identity Card Certificated do the following tasks for the includer automatically:
-1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern  
+1. Include the [As Certificated](http://https://github.com/topbitdu/unidom-certificated) concern
 2. Define the has_many :china_identity_cards macro as: ``has_many :china_identity_cards, through: :certificatings, source: :certification, source_type: 'Unidom::Certificate::China::IdentityCard'``
 
 
