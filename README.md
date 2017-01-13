@@ -49,7 +49,18 @@ identity_card = Unidom::Certificate::China::IdentityCard.identification_number_i
 identity_card.gender_code # '1' male, calculated from the identification_number
 identity_card.birth_date  # '1980-12-31', calculated from the identification_number
 
+# Find a business license per the 15-digit registration number
 Unidom::Certificate::China::BusinessLicense.registration_number_is('510105012345670').first_or_create(
+  name:                      'Google',
+  address:                   '#1 Nanjing Street, Shanghai, China',
+  issuing_authority_name:    'Shanghai Industry & Commerce Administration',
+  legal_representative_name: 'Lawrence Edward Page',
+  validity_from_date:        '2015-01-01',
+  validity_thru_date:        '2025-01-01'
+)
+
+# Find a business license per the 18-digit unified social credit identifier
+Unidom::Certificate::China::BusinessLicense.unified_social_credit_identifier_is('51010501234567890X').first_or_create(
   name:                      'Google',
   address:                   '#1 Nanjing Street, Shanghai, China',
   issuing_authority_name:    'Shanghai Industry & Commerce Administration',
