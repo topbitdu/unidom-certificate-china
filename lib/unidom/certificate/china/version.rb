@@ -1,7 +1,7 @@
 module Unidom
   module Certificate
     module China
-      VERSION = '1.3'.freeze
+      VERSION = '1.4'.freeze
     end
   end
 end
