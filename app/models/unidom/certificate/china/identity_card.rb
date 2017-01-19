@@ -1,3 +1,4 @@
+##
 # Identity Card 是中国身份证。
 
 class Unidom::Certificate::China::IdentityCard < Unidom::Certificate::China::ApplicationRecord
