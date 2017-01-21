@@ -59,3 +59,6 @@
 ## v1.3
 1. Improve the Business License model & migration to add the #unified_social_credit_identifier field
 2. Improve the Business License model to add the .unified_social_credit_identifier_is scope
+
+## v1.4
+1. Unified Social Credit Identifier validator
