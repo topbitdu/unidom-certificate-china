@@ -1,3 +1,4 @@
+##
 # Business License 是中国的工商营业执照。
 
 class Unidom::Certificate::China::BusinessLicense < Unidom::Certificate::China::ApplicationRecord
