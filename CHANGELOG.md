@@ -62,3 +62,8 @@
 
 ## v1.4
 1. Unified Social Credit Identifier validator
+
+## v1.5
+1. Models RSpec examples manifest
+2. Types RSpec examples manifest
+3. Validators RSpec examples manifest

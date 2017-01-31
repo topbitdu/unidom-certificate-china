@@ -104,3 +104,18 @@ The As Identity Card Certificated do the following tasks for the includer automa
 ```ruby
 validates :identification_number, presence: true, 'unidom/certificate/china/identification_number': true
 ```
+
+
+
+## RSpec examples
+
+```ruby
+# spec/models/unidom_spec.rb
+require 'unidom/certificate/china/models_rspec'
+
+# spec/types/unidom_spec.rb
+require 'unidom/certificate/china/types_rspec'
+
+# spec/validators/unidom_spec.rb
+require 'unidom/certificate/china/validators_rspec'
+```
