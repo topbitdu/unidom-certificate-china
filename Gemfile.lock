@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unidom-certificate-china (1.4)
+    unidom-certificate-china (1.5)
       unidom-certificate (~> 2.0, >= 2.0.4)
 
 GEM
@@ -105,9 +105,9 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    unidom-certificate (2.0.5)
+    unidom-certificate (2.1)
       unidom-common (~> 1.9)
-    unidom-common (1.9)
+    unidom-common (1.9.1)
       pg (~> 0)
       progne_tapera (>= 0.4)
       rails (>= 4.2)
