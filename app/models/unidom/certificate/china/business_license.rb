@@ -23,4 +23,4 @@ class Unidom::Certificate::China::BusinessLicense < Unidom::Certificate::China::
   scope :registration_number_is,              ->(registration_number)              { where registration_number:              registration_number              }
   scope :unified_social_credit_identifier_is, ->(unified_social_credit_identifier) { where unified_social_credit_identifier: unified_social_credit_identifier }
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Certificate::China::BusinessLicense'
