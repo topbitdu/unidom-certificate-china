@@ -27,4 +27,4 @@ class Unidom::Certificate::China::IdentityCard < Unidom::Certificate::China::App
     end
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Certificate::China::IdentityCard'
