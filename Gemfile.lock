@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    unidom-certificate-china (1.5)
-      unidom-certificate (~> 2.0, >= 2.0.4)
+    unidom-certificate-china (1.5.1)
+      unidom-certificate (~> 2.0, >= 2.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -65,7 +65,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     pg (0.19.0)
-    progne_tapera (0.5)
+    progne_tapera (0.5.1)
       rails (>= 4.2)
     rack (2.0.1)
     rack-test (0.6.3)
