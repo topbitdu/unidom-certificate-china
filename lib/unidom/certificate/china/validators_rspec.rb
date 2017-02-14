@@ -1,0 +1,2 @@
+require 'rspec/validators/unidom/certificate/china/identification_number_validator_spec'
+require 'rspec/validators/unidom/certificate/china/unified_social_credit_identifier_validator_spec'
