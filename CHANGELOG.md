@@ -71,3 +71,8 @@
 ## v1.5.1
 1. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.5
 2. Improve the models to support the namespace neglecting
+
+## v1.5.2
+1. Identification Number Validator spec
+2. Unified Social Credit Identifier Validator spec
+3. Improve the Validators RSpec examples manifest to add the Identification Number Validator spec & the Unified Social Credit Identifier Validator spec
