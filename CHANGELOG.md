@@ -69,7 +69,7 @@
 3. Validators RSpec examples manifest
 
 ## v1.5.1
-1. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.5
+1. Improved the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.5
 2. Improve the models to support the namespace neglecting
 
 ## v1.5.2
