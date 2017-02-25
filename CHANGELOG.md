@@ -70,7 +70,7 @@
 
 ## v1.5.1
 1. Improved the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.0.5
-2. Improve the models to support the namespace neglecting
+2. Improved the models to support the namespace neglecting
 
 ## v1.5.2
 1. Identification Number Validator spec
