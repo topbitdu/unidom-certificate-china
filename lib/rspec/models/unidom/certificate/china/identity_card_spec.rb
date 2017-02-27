@@ -20,7 +20,26 @@ describe Unidom::Certificate::China::IdentityCard, type: :model do
       validity_thru_date:     Date.current+10.years
     }
 
+    identification_number_max_length = described_class.columns_hash['identification_number'].limit
+
     it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
+
+    it_behaves_like 'validates', model_attributes, :identification_number,
+      {                              } => 0,
+      { identification_number: nil   } => 3,
+      { identification_number: ''    } => 3,
+      { identification_number: '1'   } => 2,
+      { identification_number: 'A'   } => 2,
+      { identification_number: '11'  } => 2,
+      { identification_number: 'AA'  } => 2,
+      { identification_number: '111' } => 2,
+      { identification_number: 'AAA' } => 2,
+      { identification_number: '1'*(identification_number_max_length-1) } => 2,
+      { identification_number: 'A'*(identification_number_max_length-1) } => 2,
+      { identification_number: '1'*identification_number_max_length     } => 0,
+      { identification_number: 'A'*identification_number_max_length     } => 1,
+      { identification_number: '1'*(identification_number_max_length+1) } => 2,
+      { identification_number: 'A'*(identification_number_max_length+1) } => 2
 
   end
 
