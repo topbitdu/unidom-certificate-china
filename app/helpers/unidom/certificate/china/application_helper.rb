@@ -1,4 +1,2 @@
-module China
-  module ApplicationHelper
-  end
+module Unidom::Certificate::China::ApplicationHelper
 end
