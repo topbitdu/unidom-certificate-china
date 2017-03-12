@@ -58,6 +58,9 @@ describe Unidom::Certificate::China::BusinessLicense, type: :model do
       { unified_social_credit_identifier: '1'*(unified_social_credit_identifier_max_length+1) } => 1,
       { unified_social_credit_identifier: 'A'*(unified_social_credit_identifier_max_length+1) } => 1
 
+    it_behaves_like 'validates text', model_attributes, :name,    length: 2..described_class.columns_hash['name'].limit
+    it_behaves_like 'validates text', model_attributes, :address, length: 2..described_class.columns_hash['address'].limit
+
   end
 
 end
