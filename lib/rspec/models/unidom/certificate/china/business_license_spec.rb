@@ -19,11 +19,10 @@ describe Unidom::Certificate::China::BusinessLicense, type: :model do
       validity_thru_date:               Date.current+10.years
     }
 
-    registration_number_max_length              = described_class.columns_hash['registration_number'].limit
-    unified_social_credit_identifier_max_length = described_class.columns_hash['unified_social_credit_identifier'].limit
+    it_behaves_like 'Unidom::Common::Concerns::ModelExtension',       model_attributes
+    it_behaves_like 'Unidom::Certificate::Concerns::AsCertification', model_attributes
 
-    it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
-
+    registration_number_max_length = described_class.columns_hash['registration_number'].limit
     it_behaves_like 'validates', model_attributes, :registration_number,
       {                            } => 0,
       { registration_number: nil   } => 0,
@@ -41,6 +40,7 @@ describe Unidom::Certificate::China::BusinessLicense, type: :model do
       { registration_number: '1'*(registration_number_max_length+1) } => 2,
       { registration_number: 'A'*(registration_number_max_length+1) } => 3
 
+    unified_social_credit_identifier_max_length = described_class.columns_hash['unified_social_credit_identifier'].limit
     it_behaves_like 'validates', model_attributes, :unified_social_credit_identifier,
       {                                         } => 0,
       { unified_social_credit_identifier: nil   } => 0,
