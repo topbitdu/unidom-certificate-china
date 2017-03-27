@@ -63,6 +63,11 @@ describe Unidom::Certificate::China::BusinessLicense, type: :model do
     it_behaves_like 'validates text', model_attributes, :address,
       length: 2..described_class.columns_hash['address'].limit
 
+    it_behaves_like 'validates text', model_attributes, :legal_representative_name,
+      length: 2..described_class.columns_hash['legal_representative_name'].limit
+    it_behaves_like 'validates text', model_attributes, :issuing_authority_name,
+      length: 2..described_class.columns_hash['issuing_authority_name'].limit
+
   end
 
 end
