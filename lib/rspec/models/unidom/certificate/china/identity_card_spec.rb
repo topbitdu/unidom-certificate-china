@@ -46,6 +46,9 @@ describe Unidom::Certificate::China::IdentityCard, type: :model do
     it_behaves_like 'validates text', model_attributes, :address,
       length: 2..described_class.columns_hash['address'].limit
 
+    it_behaves_like 'validates text', model_attributes, :issuing_authority_name,
+      length: 2..described_class.columns_hash['issuing_authority_name'].limit
+
   end
 
 end
