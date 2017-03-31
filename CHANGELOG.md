@@ -91,3 +91,7 @@
 1. Improve the Business License spec for the As Certification concern
 2. Improve the Identity Card spec for the As Certification concern
 3. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.1.1
+
+## v1.5.6
+1. Improve the Business License spec for the #legal_representative_name attribute, & the #issuing_authority_name attribute
+2. Improve the Identity Card spec for the #issuing_authority_name attribute
