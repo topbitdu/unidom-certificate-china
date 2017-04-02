@@ -75,7 +75,7 @@
 ## v1.5.2
 1. Identification Number Validator spec
 2. Unified Social Credit Identifier Validator spec
-3. Improve the Validators RSpec examples manifest to add the Identification Number Validator spec & the Unified Social Credit Identifier Validator spec
+3. Improved the Validators RSpec examples manifest to add the Identification Number Validator spec & the Unified Social Credit Identifier Validator spec
 
 ## v1.5.3
 1. Improve the Application controller for the namespace
