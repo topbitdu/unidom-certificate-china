@@ -57,7 +57,7 @@
 2. Improve the Engine class to include the Engine Extension concern
 
 ## v1.3
-1. Improve the Business License model & migration to add the #unified_social_credit_identifier field
+1. Improve the Business License model & migration to add the #``unified_social_credit_identifier`` field
 2. Improve the Business License model to add the .unified_social_credit_identifier scope
 
 ## v1.4
