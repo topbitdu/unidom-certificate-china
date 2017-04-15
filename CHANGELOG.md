@@ -85,7 +85,7 @@
 
 ## v1.5.4
 1. Improved the Identity Card spec for the validations on the #name attribute, & the #address attribute
-2. Improve the Business License spec for the validations on the #name attribute, & the #address attribute
+2. Improved the Business License spec for the validations on the #name attribute, & the #address attribute
 
 ## v1.5.5
 1. Improve the Business License spec for the As Certification concern
