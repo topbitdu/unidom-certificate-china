@@ -89,7 +89,7 @@
 
 ## v1.5.5
 1. Improved the Business License spec for the As Certification concern
-2. Improve the Identity Card spec for the As Certification concern
+2. Improved the Identity Card spec for the As Certification concern
 3. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.1.1
 
 ## v1.5.6
