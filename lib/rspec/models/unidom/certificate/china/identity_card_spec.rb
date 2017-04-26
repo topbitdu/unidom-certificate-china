@@ -20,8 +20,7 @@ describe Unidom::Certificate::China::IdentityCard, type: :model do
       validity_thru_date:     Date.current+10.years
     }
 
-    it_behaves_like 'Unidom::Common::Concerns::ModelExtension',       model_attributes
-    it_behaves_like 'Unidom::Certificate::Concerns::AsCertification', model_attributes
+    it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
 
     identification_number_max_length = described_class.columns_hash['identification_number'].limit
     it_behaves_like 'validates', model_attributes, :identification_number,
