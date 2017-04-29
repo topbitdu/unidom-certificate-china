@@ -95,3 +95,9 @@
 ## v1.5.6
 1. Improved the Business License spec for the #legal_representative_name attribute, & the #issuing_authority_name attribute
 2. Improve the Identity Card spec for the #issuing_authority_name attribute
+
+## v1.5.7
+1. Business License shared examples
+2. Identity Card shared examples
+3. RSpec shared examples manifest
+4. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.1.3
