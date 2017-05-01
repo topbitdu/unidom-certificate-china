@@ -80,7 +80,7 @@
 ## v1.5.3
 1. Improved the Application controller for the namespace
 2. Improved the Application helper for the namespace
-3. Improved the Identity Card spec for the validations on the #identification_number attribute
+3. Improved the Identity Card spec for the validations on the #``identification_number`` attribute
 4. Improved the Business License spec for the validations on the #registration_number attribute, & the #unified_social_credit_identifier attribute
 
 ## v1.5.4
