@@ -81,7 +81,7 @@
 1. Improve the Application controller for the namespace
 2. Improve the Application helper for the namespace
 3. Improve the Identity Card spec for the validations on the #``identification_number`` attribute
-4. Improve the Business License spec for the validations on the #registration_number attribute, & the #unified_social_credit_identifier attribute
+4. Improve the Business License spec for the validations on the #``registration_number`` attribute, & the #unified_social_credit_identifier attribute
 
 ## v1.5.4
 1. Improve the Identity Card spec for the validations on the #name attribute, & the #address attribute
