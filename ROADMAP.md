@@ -23,7 +23,7 @@
 1. Improve the Business License model to add the ``has_many :certificatings`` macro
 
 ## v0.7
-1. Improve the Identity Card model to expand the length of the name from 16 to 200
+1. Improve the Identity Card model to expand the length of the #``name`` attribute from 16 to 200
 2. Improve the Business License model to expand the length of the name from 16 to 200
 
 ## v1.0
