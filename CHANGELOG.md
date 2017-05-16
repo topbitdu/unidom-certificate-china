@@ -100,4 +100,4 @@
 1. Business License shared examples
 2. Identity Card shared examples
 3. RSpec shared examples manifest
-4. Improve the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.1.3
+4. Improved the Ruby Gem Specification to depend on [unidom-certificate](https://github.com/topbitdu/unidom-certificate) v2.1.3
